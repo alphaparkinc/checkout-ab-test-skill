@@ -1,0 +1,61 @@
+{
+  "name": "checkout-ab-test-skill",
+  "version": "1.0.0",
+  "description": "Design, simulate, and analyze A/B tests for e-commerce checkout flows. Calculates statistical significance, conversion lift, and revenue impact.",
+  "author": "alphaparkinc",
+  "category": "optimization",
+  "tags": [
+    "ab-testing",
+    "checkout",
+    "conversion",
+    "statistics",
+    "optimization"
+  ],
+  "inputs": {
+    "control": {
+      "type": "object",
+      "description": "Control group data: visitors, conversions, avg_order_value."
+    },
+    "variant": {
+      "type": "object",
+      "description": "Variant group data: visitors, conversions, avg_order_value."
+    },
+    "confidence_level": {
+      "type": "number",
+      "description": "Required confidence level (0.90, 0.95, or 0.99).",
+      "default": 0.95
+    },
+    "test_name": {
+      "type": "string",
+      "description": "Name of the A/B test."
+    }
+  },
+  "outputs": {
+    "is_significant": {
+      "type": "boolean",
+      "description": "Whether result is statistically significant."
+    },
+    "p_value": {
+      "type": "number",
+      "description": "Calculated p-value."
+    },
+    "conversion_lift_pct": {
+      "type": "number",
+      "description": "Percentage conversion rate lift from control to variant."
+    },
+    "revenue_impact_usd": {
+      "type": "number",
+      "description": "Estimated monthly revenue impact."
+    },
+    "recommendation": {
+      "type": "string",
+      "description": "Ship variant / Continue testing / Revert to control."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Human-readable test summary."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
