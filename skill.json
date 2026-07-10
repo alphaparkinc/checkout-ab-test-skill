@@ -1,5 +1,5 @@
 {
-  "name": "checkout-ab-test-skill",
+  "name": "genpark-checkout-ab-test-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Design, simulate, and analyze A/B tests for e-commerce checkout flows. Calculates statistical significance, conversion lift, and revenue impact.",
   "author": "genpark",
