@@ -1,4 +1,4 @@
-# checkout-ab-test-skill
+# genpark-checkout-ab-test-skill
 
 > **GenPark AI Agent Skill** — Design, simulate, and analyze A/B tests for e-commerce checkout flows.
 
